@@ -13,14 +13,12 @@ function Stats({ items }) {
 
   return (
     <footer className="stats">
-      {percentage === 100 ? (
-        "You got everything lets go !"
-      ) : (
-        <em>
-          {`You have ${numItems} items on list, you have packed ${numPacked}
+      <em>
+        {percentage === 100
+          ? "You got everything lets go !"
+          : `You have ${numItems} items on list, you have packed ${numPacked}
           items(${percentage}%)`}
-        </em>
-      )}
+      </em>
     </footer>
   );
 }
